@@ -5,7 +5,7 @@ spacy>=3.6.0
 pandas
 numpy
 scikit-learn
-bertopic==0.13.0
+bertopic
 hdbscan==0.8.31
 umap-learn==0.5.4
 openai
