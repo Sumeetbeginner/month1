@@ -25,12 +25,13 @@ st.set_page_config(
 )
 
 def load_spacy_model():
+    import spacy
     try:
         return spacy.load("en_core_web_sm")
     except OSError:
-        # Install the model automatically
-        subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
-        return spacy.load("en_core_web_sm")
+        import streamlit as st
+        st.error("spaCy model not installed. Ensure 'en-core-web-sm' is in requirements.txt")
+        return None
 
 nlp = load_spacy_model()
 def scrape_website(url):

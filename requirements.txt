@@ -2,6 +2,7 @@ streamlit
 requests
 beautifulsoup4
 spacy
+en-core-web-sm
 pandas
 numpy
 scikit-learn
