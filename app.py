@@ -13,6 +13,8 @@ from textblob import TextBlob
 import plotly.express as px
 import plotly.graph_objects as go
 from collections import Counter
+import subprocess
+import sys
 import re
 
 # Page configuration
@@ -23,13 +25,14 @@ st.set_page_config(
 )
 
 def load_spacy_model():
-    """Load spaCy model"""
     try:
         return spacy.load("en_core_web_sm")
     except OSError:
-        st.error("Please install the spaCy model: python -m spacy download en_core_web_sm")
-        return None
+        # Install the model automatically
+        subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+        return spacy.load("en_core_web_sm")
 
+nlp = load_spacy_model()
 def scrape_website(url):
     """Scrape content from website URL"""
     try:
