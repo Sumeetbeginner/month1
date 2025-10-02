@@ -6,8 +6,8 @@ pandas
 numpy
 scikit-learn
 bertopic
-hdbscan==0.8.31
-umap-learn==0.5.4
+hdbscan
+umap-learn
 openai
 textblob
 plotly
