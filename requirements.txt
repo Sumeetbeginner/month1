@@ -1,11 +1,13 @@
-streamlit
+streamlit==1.30.0
 requests
 beautifulsoup4
 spacy>=3.6.0
 pandas
 numpy
 scikit-learn
-bertopic
+bertopic==0.13.0
+hdbscan==0.8.31
+umap-learn==0.5.4
 openai
 textblob
 plotly

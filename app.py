@@ -2,7 +2,6 @@
 import streamlit as st
 import requests
 from bs4 import BeautifulSoup
-import spacy
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -21,12 +20,7 @@ st.set_page_config(
 
 def load_spacy_model():
     import spacy
-    try:
-        return spacy.load("en_core_web_sm")
-    except OSError:
-        import streamlit as st
-        st.error("spaCy model not installed. Ensure 'en-core-web-sm' is in requirements.txt")
-        return None
+    return spacy.load("en_core_web_sm")
 
 nlp = load_spacy_model()
 def scrape_website(url):
