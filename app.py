@@ -8,14 +8,9 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
 from bertopic import BERTopic
-import openai
 from textblob import TextBlob
 import plotly.express as px
 import plotly.graph_objects as go
-from collections import Counter
-import subprocess
-import sys
-import re
 
 # Page configuration
 st.set_page_config(
