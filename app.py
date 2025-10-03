@@ -1,5 +1,6 @@
 # app.py
 import streamlit as st
+import spacy
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -18,8 +19,9 @@ st.set_page_config(
     layout="wide"
 )
 
+@st.cache_resource
 def load_spacy_model():
-    import spacy
+    # It's better to import spacy here and load the model
     return spacy.load("en_core_web_sm")
 
 nlp = load_spacy_model()
