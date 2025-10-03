@@ -4,10 +4,8 @@ import spacy
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
-from bertopic import BERTopic
 from textblob import TextBlob
 import plotly.express as px
 import plotly.graph_objects as go
