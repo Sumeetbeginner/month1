@@ -3,7 +3,6 @@ requests
 beautifulsoup4
 spacy
 pandas
-numpy
 scikit-learn
 openai
 textblob
