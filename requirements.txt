@@ -1,13 +1,12 @@
-
 streamlit
 requests
 beautifulsoup4
-
 pandas
-numpy
+numpy==1.26.4
 scikit-learn
 textblob
 plotly
-
-spacy>=3.0.0,<4.0.0
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz#egg=en_core_web_sm
+spacy==3.6.0
+thinc==8.1.12
+blis==0.7.10
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0-py3-none-any.whl
