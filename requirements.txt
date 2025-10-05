@@ -1,17 +1,13 @@
-# requirements.txt - For stable deployment
 
-# Core app and web scraping
-streamlit==1.30.0
+streamlit
 requests
 beautifulsoup4
 
-# Data and NLP libraries with pinned versions
-pandas==2.1.4
-numpy==1.26.4
-scikit-learn==1.3.2
+pandas
+numpy
+scikit-learn
 textblob
 plotly
 
-# spaCy model
-spacy==3.5.0
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
+spacy>=3.0.0,<4.0.0
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.0.0/en_core_web_sm-3.0.0.tar.gz#egg=en_core_web_sm
